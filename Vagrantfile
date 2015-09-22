@@ -5,6 +5,11 @@ Vagrant.configure(2) do |config|
   config.vm.box = "ubuntu/trusty64"
   config.vm.network "public_network"
   config.vm.hostname = "clean-slate"
+  config.ssh.username = "vagrant"
+  config.ssh.password = "vagrant"
+# config.ssh.forward_agent = true
+# config.ssh.forward_x11 = true
+
   config.vm.provider "virtualbox" do |v|
       v.gui = false
       v.customize ["modifyvm", :id, "--rtcuseutc", "on"]
