@@ -2,7 +2,7 @@
 # vi: set ft=ruby :
 
 Vagrant.configure(2) do |config|
-  config.vm.box = "hashicorp/trusty64"
+  config.vm.box = "ubuntu/trusty64"
   config.vm.network "public_network"
   config.vm.hostname = "clean-slate"
   config.vm.provider "virtualbox" do |v|
