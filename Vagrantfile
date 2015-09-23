@@ -20,7 +20,7 @@ Vagrant.configure(2) do |config|
       v.customize ["modifyvm", :id, "--acpi", "on"]
       v.customize ["modifyvm", :id, "--nictype1", "virtio"]
       v.customize ["modifyvm", :id, "--groups", "/Clean Slate"]
-      v.customize ["modifyvm", :id, "--memory", "4096"]
+      v.customize ["modifyvm", :id, "--memory", "5120"]
       v.customize ["modifyvm", :id, "--vram", "24"]
       v.customize ["modifyvm", :id, "--cpus", "2"]
   end
